@@ -1,5 +1,6 @@
 <?php
 //var_dump(get_magic_quotes_gpc());
+//http://www.satya-weblog.com/2010/11/php-and-mysql-sql-injection-example.html
 mysql_connect('localhost', 'L1ttleJ0hnny', '') or die('DB Conn error');
 mysql_select_db('J0hnnyDr0pTables');
 echo $query = "select * from user where user =  '$_POST[user]' AND password = '$_POST[pass]'";
